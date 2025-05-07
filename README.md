@@ -67,7 +67,7 @@ I kicked off this side-project by defining the core question:
 
 This came straight from the guide’s Purpose & Context, which calls for 48 months of real price data and two optimisation methods—LP and ILP.
 
-![Introduction Slide](Slide1.png)
+![Introduction Slide](Slide1.PNG)
 
 ---
 
