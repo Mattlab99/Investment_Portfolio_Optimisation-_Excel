@@ -1,4 +1,4 @@
-git pull origin main
+
 # fix any file names in images/, and make sure README.md paths match
 git add images README.md
 git commit -m "Fix image paths and filenames"
@@ -67,7 +67,6 @@ I kicked off this side-project by defining the core question:
 
 This came straight from the guide’s Purpose & Context, which calls for 48 months of real price data and two optimisation methods—LP and ILP.
 
-![Introduction Slide](Slide1.PNG)
 
 ---
 
@@ -83,7 +82,8 @@ This came straight from the guide’s Purpose & Context, which calls for 48 mont
      =STOCKHISTORY("XASX.PME", "01-01-2021", "01-01-2025", 2, 1, 0, 1)  
      ```  
 
-![Data Gathering](images/Slide2.png)
+![تصویر صفحه 2025-05-07 220654](https://github.com/user-attachments/assets/6fe9fca9-5d15-4849-a5fb-54f4e7d3ef75)
+
 
 ---
 
@@ -99,7 +99,10 @@ This came straight from the guide’s Purpose & Context, which calls for 48 mont
   - Computed each stock’s average return and standard deviation.  
   - Defined three risk buckets (R1=low vol, R2=medium, R3=high), ensuring at least two assets per bucket.
 
-![Returns & Risk](images/Slide3.png)
+
+![Slide3](https://github.com/user-attachments/assets/032e00f1-2120-4262-92b1-aae292ea7123)
+
+![Slide4](https://github.com/user-attachments/assets/386a29a2-ee44-4179-b39e-6d15f3575eb3)
 
 ---
 
@@ -115,7 +118,9 @@ Following Section 2 of the guide, I set up a Linear Program to **maximise total 
 
 I coloured decision cells green and constraint cells blue in Solver, just like in class.
 
-![LP Model Setup](images/Slide4.png)
+![Slide6](https://github.com/user-attachments/assets/0a034cfd-547c-4350-9088-3f50876d0401)
+
+![Slide7](https://github.com/user-attachments/assets/d9e62627-0aa7-44f8-aad4-ac4abef740f4)
 
 ---
 
@@ -125,7 +130,14 @@ I coloured decision cells green and constraint cells blue in Solver, just like i
 - **Solver Sensitivity Report** showing shadow prices and reduced costs  
 - Tested “what-if” tweaks on risk limits to see allocation shifts
 
-![LP Results & Sensitivity](images/Slide5.png)
+
+
+![Slide8](https://github.com/user-attachments/assets/ccebb8c6-4dd7-4dc0-b62a-1a89e62f88f4)
+![Slide9](https://github.com/user-attachments/assets/0d1bd972-49e5-45c7-8bce-3d6a33ff85ab)
+![Slide11](https://github.com/user-attachments/assets/9c44f096-d58e-4dc7-8b60-057d5a3fcb27)
+![Slide12](https://github.com/user-attachments/assets/6ed2f8fe-4775-4379-89f7-c2af711119f7)
+![Slide13](https://github.com/user-attachments/assets/975dff3b-f706-4cb3-a3b6-47736d2f597d)
+
 
 ---
 
@@ -138,8 +150,8 @@ Per Section 3, I converted to an Integer Linear Program:
 - At most one from R3, at least two from R1  
 - Only allow an R3 pick if at least one R2 is chosen  
 - One extra defendable rule of my own  
-
-![ILP Model Setup](images/Slide6.png)
+![Slide16](https://github.com/user-attachments/assets/7f843534-bc1e-4789-be90-d9894d574239)
+![Slide17](https://github.com/user-attachments/assets/0e34de9b-65d3-471f-a650-21e79f87da6a)
 
 ---
 
@@ -147,7 +159,7 @@ Per Section 3, I converted to an Integer Linear Program:
 
 Solver’s integer run picked the “best 5” (e.g. TLS, CBA, XRO…) for a **3.6% expected portfolio return**, trading some diversification for a slightly higher yield.
 
-![ILP Results](images/Slide7.png)
+![Slide18](https://github.com/user-attachments/assets/22216980-3832-4925-85e3-ebdc3506dff2)
 
 ---
 
@@ -160,8 +172,8 @@ Solver’s integer run picked the “best 5” (e.g. TLS, CBA, XRO…) for a **3
 
 **Recommendation:** Use the LP solution for its balanced risk profile and smoother allocations, unless you need that extra 0.2% and can tolerate concentration.
 
-![Summary & Recommendation](Investment_Portfolio_Optimisation-_Excel
-/Slide8.PNG)
+
+![Slide19](https://github.com/user-attachments/assets/6da6838a-245d-4fb9-9b73-037572576779)
 
 ---
 
