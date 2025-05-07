@@ -1,3 +1,10 @@
+git pull origin main
+# fix any file names in images/, and make sure README.md paths match
+git add images README.md
+git commit -m "Fix image paths and filenames"
+git push origin main
+
+
 # Stock Portfolio Optimizer
 
 This is a personal data-analytics project where I built a decision-model in Excel to optimize a simple stock portfolio. It showcases:
@@ -60,7 +67,7 @@ I kicked off this side-project by defining the core question:
 
 This came straight from the guide’s Purpose & Context, which calls for 48 months of real price data and two optimisation methods—LP and ILP.
 
-![Introduction Slide](images/Slide1.png)
+![Introduction Slide](Slide1.png)
 
 ---
 
