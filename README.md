@@ -153,7 +153,7 @@ Solver’s integer run picked the “best 5” (e.g. TLS, CBA, XRO…) for a **3
 
 **Recommendation:** Use the LP solution for its balanced risk profile and smoother allocations, unless you need that extra 0.2% and can tolerate concentration.
 
-![Summary & Recommendation]Investment_Portfolio_Optimisation-_Excel
+![Summary & Recommendation](Investment_Portfolio_Optimisation-_Excel
 /Slide8.PNG)
 
 ---
